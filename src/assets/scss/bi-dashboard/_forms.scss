@@ -1,0 +1,36 @@
+.invalid-feedback {
+    font-size: 13px;
+}
+
+.form-control {
+    font-size: 14px;
+    border-bottom: 1.5px solid #9A9A9A !important;
+    border: 0;
+    border-radius: 0;
+    background: $color-bg-blue;
+
+    &.is-invalid {
+        background-color: $color-bg-danger;
+        border-color: $color-danger-red;
+
+        &:focus {
+            box-shadow: none;
+            background-color: $color-bg-danger;
+            border-color: $color-danger-red;
+        }
+    }
+
+    &.is-valid:focus {
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        outline: 0;
+    }
+
+    &:focus {
+        box-shadow: none;
+        background: $color-bg-blue;
+        border-bottom: 1.5px solid #9A9A9A !important;
+    }
+}

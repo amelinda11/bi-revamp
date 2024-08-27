@@ -1,0 +1,99 @@
+.navbar {
+    min-height: 53px;
+    margin-bottom: 20px;
+    padding: .5rem 1rem;
+
+    a {
+        vertical-align: middle;
+
+        &.dropdown-item {
+            color: $color-default;
+        }
+    }
+
+    p {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.8em;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    &.navbar-absolute {
+        position: absolute;
+        width: 100%;
+        padding-top: 10px;
+        z-index: 1029;
+    }
+
+    .navbar-nav {
+        .nav-link.btn {
+            padding: $padding-btn-vertical $padding-btn-horizontal;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+            font-size: $font-size-mini;
+            padding: $padding-base-vertical $padding-base-horizontal;
+            line-height: $line-height-nav-link;
+            margin-right: 3px;
+
+            &.disabled {
+                opacity: .5;
+                color: $white-color;
+            }
+
+            .profile-box {
+                color: $card-black-color;
+                background: $color-default-opacity;
+                border-radius: 4px;
+                padding: 6px 8px;
+                margin-right: 2px;
+                font-size: 18px;
+            }
+        }
+
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active {
+            border-radius: $border-radius-small;
+            color: $color-danger;
+        }
+    }
+
+    &.navbar-transparent {
+        background-color: $transparent-bg !important;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+
+        a:not(.dropdown-item):not(.btn) {
+            color: $color-default;
+
+            &.disabled {
+                opacity: .5;
+                color: $color-default;
+            }
+        }
+
+        .nav-item .nav-link:not(.btn) {
+            color: $color-default;
+            cursor: pointer;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $color-default;
+    }
+
+    .navbar-collapse {
+        .nav-item {
+            a {
+                font-size: $font-size-base;
+                font-weight: 600;
+            }
+        }
+    }
+}

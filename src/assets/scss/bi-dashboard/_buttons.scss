@@ -1,0 +1,26 @@
+.btn {
+    padding: 6px 36px;
+    border-radius: 70px;
+    border: 2px solid $color-dark-secondary;
+
+    &.btn-primary {
+        border-color: $color-blue;
+        background-color: $color-blue;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-blue;
+        }
+    }
+
+    &.btn-secondary {
+        border-color: $color-dark-secondary;
+        background-color: $color-dark-secondary;
+
+        &:hover {
+            border: 2px solid $color-dark-secondary;
+            background: transparent;
+            color: $color-dark-secondary;
+        }
+    }
+}

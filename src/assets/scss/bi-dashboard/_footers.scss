@@ -1,0 +1,14 @@
+.footer {
+    padding: 24px 0;
+
+    .copyright {
+        font-size: $font-size-small;
+        line-height: 1.8;
+    }
+
+    &:after {
+        display: table;
+        clear: both;
+        content: " ";
+    }
+}

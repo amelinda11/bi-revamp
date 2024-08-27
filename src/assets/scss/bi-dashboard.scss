@@ -1,0 +1,37 @@
+@import 'bi-dashboard/variables';
+@import 'bi-dashboard/mixins';
+
+// Plugins CSS
+@import "bi-dashboard/plugins/plugin-animate-bootstrap-notify";
+@import "bi-dashboard/plugins/plugin-perfect-scrollbar";
+
+// Core CSS
+@import "bi-dashboard/buttons";
+// @import "bi-dashboard/inputs";
+@import "bi-dashboard/typography";
+// @import "bi-dashboard/misc";
+// @import "bi-dashboard/checkboxes-radio";
+
+
+// components
+@import "bi-dashboard/navbar";
+@import "bi-dashboard/page-header";
+@import "bi-dashboard/dropdown";
+@import "bi-dashboard/alerts";
+@import "bi-dashboard/images";
+// @import "bi-dashboard/nucleo-outline";
+@import "bi-dashboard/tables";
+@import "bi-dashboard/sidebar-and-main-panel";
+@import "bi-dashboard/footers";
+@import "bi-dashboard/fixed-plugin";
+@import "bi-dashboard/forms";
+
+// cards
+// @import "bi-dashboard/cards";
+// @import "bi-dashboard/cards/card-plain";
+// @import "bi-dashboard/cards/card-chart";
+// @import "bi-dashboard/cards/card-user";
+// @import "bi-dashboard/cards/card-map";
+// @import "bi-dashboard/cards/card-stats";
+
+@import "bi-dashboard/responsive";
