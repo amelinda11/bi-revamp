@@ -1,13 +1,15 @@
 import { Routes } from '@angular/router';
+import { DashboardComponent } from '../pages/dashboard/dashboard.component';
+import { WeeklyComponent } from '../pages/weekly/weekly.component';
+import { ComparationComponent } from '../pages/comparation/comparation.component';
+import { ListStoreComponent } from '../pages/list-store/list-store.component';
+import { ListAreaComponent } from '../pages/list-area/list-area.component';
 
 
 export const LayoutRoutes: Routes = [
-    // { path: 'dashboard', component: DashboardComponent },
-    // { path: 'user', component: UserComponent },
-    // { path: 'table', component: TableComponent },
-    // { path: 'typography', component: TypographyComponent },
-    // { path: 'icons', component: IconsComponent },
-    // { path: 'maps', component: MapsComponent },
-    // { path: 'notifications', component: NotificationsComponent },
-    // { path: 'upgrade', component: UpgradeComponent }
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'weekly', component: WeeklyComponent },
+    { path: 'comparation', component: ComparationComponent },
+    { path: 'list-store', component: ListStoreComponent },
+    { path: 'list-area', component: ListAreaComponent },
 ];

@@ -1,0 +1,25 @@
+<div *ngIf="visible">
+    <c-modal backdrop="static" id="reusableModal" [visible]="visible">
+        <c-modal-header>
+            <h5 cModalTitle>{{title}}</h5>
+            <button 
+                *ngIf="!isLoading" 
+                (click)="handleVisibleModal('close')" 
+                cButtonClose
+                class="button-close-modal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </c-modal-header>
+        <c-modal-body class="text-sm">
+            <div *ngIf="isLoading">
+                <app-loading></app-loading>
+            </div>
+            <ng-content></ng-content>
+        </c-modal-body>
+        <c-modal-footer>
+            <button class="btn btn-secondary" (click)="handleVisibleModal('close')">Cancel</button>
+            <button class="btn btn-primary" (click)="handleVisibleModal('save')">Save</button>
+        </c-modal-footer>
+    </c-modal>
+</div>

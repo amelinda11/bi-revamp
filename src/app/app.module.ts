@@ -12,6 +12,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SidebarModule } from "./sidebar/sidebar.module";
 import { NavbarModule } from "./shared/navbar/navbar.module";
 import { FooterModule } from "./shared/footer/footer.module";
+import { ModalAppModule } from "./shared/modal/modal.module";
+import { LoadingAppModule } from "./shared/loading/loading.module";
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { FooterModule } from "./shared/footer/footer.module";
     SidebarModule,
     NavbarModule,
     FooterModule,
+    ModalAppModule,
+    LoadingAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]

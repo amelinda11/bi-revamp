@@ -5,6 +5,11 @@ import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutRoutes } from './layout.routing';
+import { DashboardComponent } from '../pages/dashboard/dashboard.component';
+import { WeeklyComponent } from '../pages/weekly/weekly.component';
+import { ComparationComponent } from '../pages/comparation/comparation.component';
+import { ListStoreComponent } from '../pages/list-store/list-store.component';
+import { ListAreaComponent } from '../pages/list-area/list-area.component';
 
 @NgModule({
     imports: [
@@ -14,14 +19,11 @@ import { LayoutRoutes } from './layout.routing';
         NgbModule
     ],
     declarations: [
-        // DashboardComponent,
-        // UserComponent,
-        // TableComponent,
-        // UpgradeComponent,
-        // TypographyComponent,
-        // IconsComponent,
-        // MapsComponent,
-        // NotificationsComponent,
+        DashboardComponent,
+        WeeklyComponent,
+        ComparationComponent,
+        ListStoreComponent,
+        ListAreaComponent
     ]
 })
 
