@@ -1,0 +1,56 @@
+<div class="wrapper">
+    <div class="wrapper-box">
+        <img src="../../../assets/img/icon-header.png" alt="icon-kfc" class="header-image"/><br/>
+        <b>BUSINESS INTELLIGENCE</b><br/>
+        <span>Login to your accout</span>
+        <form cForm (ngSubmit)="onSubmiLogin()" [formGroup]="loginForm" cForm novalidate class="login-form">
+            <div class="mb-3">
+                <label cCol cLabel="col" for="username">Username</label>
+                <div *ngIf="loginForm.controls['username'] as ctrl">
+                    <input [valid]="
+                        ctrl.touched && ctrl.valid
+                        ? true
+                        : (submitted || ctrl.touched) && ctrl.invalid
+                        ? false
+                        : undefined" 
+                        autocomplete="username" 
+                        cFormControl 
+                        formControlName="username" 
+                        id="username"
+                        placeholder="Enter your username" required type="text" 
+                    />
+                    <c-form-feedback *ngIf="submitted || ctrl.invalid" [valid]="!(submitted || ctrl.invalid)">
+                        <ng-container *ngIf="ctrl.errors as errors">
+                            <div class="input-err" *ngIf="errors['required']">Username is required</div>
+                        </ng-container>
+                    </c-form-feedback>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label cCol cLabel="col" for="[password]">Password</label>
+                <div *ngIf="loginForm.controls['password'] as ctrl">
+                    <input [valid]="
+                        ctrl.touched && ctrl.valid
+                        ? true
+                        : (submitted || ctrl.touched) && ctrl.invalid
+                        ? false
+                        : undefined" 
+                        autocomplete="password" 
+                        cFormControl 
+                        formControlName="password" 
+                        id="password"
+                        placeholder="Enter your password" required type="password" 
+                    />
+                    <c-form-feedback *ngIf="submitted || ctrl.invalid" [valid]="!(submitted || ctrl.invalid)">
+                        <ng-container *ngIf="ctrl.errors as errors">
+                            <div class="input-err" *ngIf="errors['required']">Password is required</div>
+                        </ng-container>
+                    </c-form-feedback>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-long btn-submit">Login</button>
+        </form>
+    </div>
+</div>

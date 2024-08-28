@@ -3,3 +3,8 @@ export interface ModalProps {
     title: string;
     subtitle: string;
 }
+
+export interface LoginProps {
+    username: string;
+    password: string;
+}

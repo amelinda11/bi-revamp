@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 
 import { ROUTES } from '../../sidebar/sidebar.component';
 import { TimeHelperService } from '../../helper/time-helper.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
     selector: 'navbar-cmp',
@@ -40,6 +41,7 @@ export class NavbarComponent implements OnInit {
         private router: Router,
         private timeHelper: TimeHelperService,
         private formBuilder: FormBuilder,
+        private auth: AuthService
     ) {
         this.location = location;
         this.nativeElement = element.nativeElement;
@@ -146,4 +148,8 @@ export class NavbarComponent implements OnInit {
         this.submitted = true;
         return this.changePassForm.status === 'VALID';
     }
+
+    logout() {
+        this.auth.logout();
+    };
 }

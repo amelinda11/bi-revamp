@@ -23,4 +23,21 @@
             color: $color-dark-secondary;
         }
     }
+
+    &.btn-submit {
+        border-radius: 8px;
+        color: $color-bg-white;
+        background-color: $color-danger-red-100;
+        border-color: transparent;
+
+        &:hover {
+            border: 2px solid $color-danger-red-100;
+            background: transparent;
+            color: $color-danger-red-100;
+        }
+    }
+
+    &-long {
+        width: 100%;
+    }
 }
